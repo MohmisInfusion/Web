@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emmanuel Word Chapel - Kahawa Wendani. Teaching • Raising Disciples • Transforming Lives.">
+  <title>Emmanuel Word Chapel | Kahawa Wendani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Emmanuel Word Chapel home">
+      <div class="brand-mark">✝</div>
+      <div>
+        <strong>EMMANUEL<br>WORD CHAPEL</strong>
+        <small>KAHAWA WENDANI</small>
+      </div>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#sermons">Sermons</a>
+      <a href="#ministries">Ministries</a>
+      <a href="#events">Events</a>
+      <a href="#give">Give</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO</p>
+        <h1>Emmanuel<br>Word Chapel</h1>
+        <p class="location">Kahawa Wendani</p>
+        <p class="tagline">Teaching <span>•</span> Raising Disciples <span>•</span> Transforming Lives</p>
+        <p class="hero-text">A place where we grow in the Word, build authentic relationships, and live out our faith.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#contact">Plan Your Visit</a>
+          <a class="btn btn-outline" href="#sermons">▶ Watch Sermons</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="week-strip" id="services">
+      <div class="week-intro">
+        <span class="icon">▣</span>
+        <div>
+          <h2>This Week at the Chapel</h2>
+          <p>Join us for fellowship, worship and the Word.</p>
+        </div>
+      </div>
+      <div class="schedule-card">
+        <span class="schedule-icon">◉</span>
+        <div><strong>Sunday</strong><span>Main Worship Service</span><em>Service time — update here</em></div>
+      </div>
+      <div class="schedule-card">
+        <span class="schedule-icon">◒</span>
+        <div><strong>Wednesday</strong><span>Prayer &amp; Bible Study</span><em>Time — update here</em></div>
+      </div>
+      <div class="schedule-card">
+        <span class="schedule-icon">✦</span>
+        <div><strong>Other Gatherings</strong><span>Men • Women • Youth • Children</span><em>See events for details</em></div>
+      </div>
+    </section>
+
+    <section class="section two-column" id="sermons">
+      <div class="sermon-feature">
+        <div class="section-heading light">
+          <p class="eyebrow">WORD &amp; TEACHING</p>
+          <h2>Latest Sermon</h2>
+        </div>
+        <div class="sermon-body">
+          <div class="sermon-image placeholder-image">
+            <span>YOUR SERMON IMAGE</span>
+            <button class="play-button" aria-label="Play sermon">▶</button>
+          </div>
+          <div class="sermon-copy">
+            <span class="pill">SERMON</span>
+            <h3>Let Go of Offenses;<br>Let God Take Position</h3>
+            <p>Genesis 50:20 · Luke 17:1 · Proverbs 19:11 · Romans 12:19 · Matthew 6:15</p>
+            <small>Ministering: Senior Pastor Rev. Frank</small>
+            <a href="#" class="text-link">Watch Sermon →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="events-preview" id="events">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT'S HAPPENING</p>
+          <h2>Upcoming Events</h2>
+        </div>
+        <article class="event">
+          <div class="date-box"><strong>30</strong><span>AUG</span></div>
+          <div><h3>Discipleship Level 1 Graduation</h3><p>Guest: General Overseer Rev. Ken</p><small>Hosts: Rev. Frank &amp; Pastor Karen</small></div>
+        </article>
+        <article class="event">
+          <div class="date-box"><strong>24</strong><span>SEP</span></div>
+          <div><h3>Prayer, Fasting &amp; Bible Study</h3><p>Corporate prayer • Bible Study • Prayer</p><small>Update date/time when publishing</small></div>
+        </article>
+        <article class="event">
+          <div class="date-box"><strong>—</strong><span>DATE</span></div>
+          <div><h3>Next Chapel Event</h3><p>Add your next announcement here.</p><small><a href="#contact">Contact the Chapel</a></small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="ministries">
+      <div class="section-heading">
+        <p class="eyebrow">GROW TOGETHER</p>
+        <h2>Our Ministries</h2>
+        <p>Serving God together, for a greater impact.</p>
+      </div>
+      <div class="ministry-grid">
+        <a class="ministry-card m1" href="#"><span>♟</span><strong>Men</strong></a>
+        <a class="ministry-card m2" href="#"><span>◯</span><strong>Women</strong></a>
+        <a class="ministry-card m3" href="#"><span>✦</span><strong>Youth</strong></a>
+        <a class="ministry-card m4" href="#"><span>♧</span><strong>Children</strong></a>
+        <a class="ministry-card m5" href="#"><span>🙏</span><strong>Prayer</strong></a>
+        <a class="ministry-card m6" href="#"><span>▣</span><strong>Media</strong></a>
+        <a class="ministry-card m7" href="#"><span>▤</span><strong>Discipleship</strong></a>
+      </div>
+    </section>
+
+    <section class="section about-grid" id="about">
+      <div class="about-copy">
+        <p class="eyebrow">WHO WE ARE</p>
+        <h2>About Emmanuel Word Chapel</h2>
+        <p>Emmanuel Word Chapel is a Bible-believing Christian community committed to teaching the Word of God, raising disciples, and transforming lives in our community and beyond.</p>
+        <a class="text-link" href="#contact">Learn More About Us →</a>
+      </div>
+      <div class="vision-card">
+        <div><span>◎</span><div><h3>Our Vision</h3><p>To be a Christ-centered Chapel that transforms lives and impacts our community.</p></div></div>
+        <div><span>✝</span><div><h3>Our Mission</h3><p>To teach the Word, build disciples, and reach the world with the Gospel.</p></div></div>
+      </div>
+      <div class="welcome-image placeholder-image"><span>CHAPEL / WORSHIP PHOTO</span><div>Come Worship<br>With Us</div></div>
+    </section>
+
+    <section class="give-section" id="give">
+      <div>
+        <p class="eyebrow">PARTNER WITH THE WORK</p>
+        <h2>Giving</h2>
+        <p>Your giving supports the ministry, discipleship and outreach of Emmanuel Word Chapel.</p>
+      </div>
+      <div class="give-box">
+        <h3>Give via M-Pesa</h3>
+        <p class="muted">Add your official Paybill/Till details here before publishing.</p>
+        <strong class="mpesa-number">MPESA DETAILS</strong>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">MOMENTS AT THE CHAPEL</p>
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">ADD PHOTO</div>
+        <div class="gallery-item">ADD PHOTO</div>
+        <div class="gallery-item">ADD PHOTO</div>
+        <div class="gallery-item">ADD PHOTO</div>
+        <div class="gallery-item">ADD PHOTO</div>
+        <div class="gallery-item">ADD PHOTO</div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="contact">
+      <div>
+        <p class="eyebrow">YOU ARE WELCOME</p>
+        <h2>Come Worship With Us</h2>
+        <p>We would love to worship, learn and grow together with you.</p>
+      </div>
+      <div class="contact-card">
+        <h3>Emmanuel Word Chapel</h3>
+        <p>📍 Kahawa Wendani</p>
+        <p>📞 <a href="tel:+254720200619">0720 200 619</a></p>
+        <div class="contact-actions">
+          <a class="btn btn-gold" href="https://wa.me/254720200619" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="btn btn-outline-dark" href="tel:+254720200619">Call Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="brand-mark">✝</div>
+        <div><strong>EMMANUEL<br>WORD CHAPEL</strong><small>KAHAWA WENDANI</small></div>
+        <p>Teaching • Raising Disciples • Transforming Lives</p>
+      </div>
+      <div><h3>Contact Us</h3><p>📍 Kahawa Wendani</p><p>📞 0720 200 619</p><p>💬 WhatsApp 0720 200 619</p></div>
+      <div><h3>Quick Links</h3><a href="#about">About Us</a><a href="#services">Services</a><a href="#sermons">Sermons</a><a href="#ministries">Ministries</a><a href="#events">Events</a></div>
+      <div><h3>Follow Us</h3><p class="socials"><a href="#">Facebook</a> <a href="#">YouTube</a> <a href="#">Instagram</a></p><p>Stay connected for updates and encouragement.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Emmanuel Word Chapel. All rights reserved.</span><span>Teaching • Raising Disciples • Transforming Lives</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
