@@ -10,4 +10,5 @@ document.querySelectorAll(".nav a").forEach(link => {
   link.addEventListener("click", () => nav.classList.remove("open"));
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
