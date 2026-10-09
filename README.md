@@ -33,6 +33,21 @@ Settings → Pages → Build and deployment → *Deploy from a branch* → `main
 > **Note on filenames:** GitHub Pages is case-sensitive. `index.html` links
 > `style.css` and `script.js` in lowercase — keep them that way.
 
+## Publishing a sermon video
+
+1. Upload the sermon to the Chapel's YouTube channel
+2. Copy the video ID from the watch URL — it's the part after `v=`
+   (`https://www.youtube.com/watch?v=**dQw4w9WgXcQ**`)
+3. In `index.html`, find `<figure class="sermon-media" data-video-id="">`
+4. Paste the ID between the quotes: `data-video-id="dQw4w9WgXcQ"`
+
+That's the only change needed. The play button then loads the video in place.
+Until an ID is added, the button shows a short "not online yet" note.
+
+**Sermon poster:** save it as `assets/images/sermon.jpg`. Crop out any blank
+side bars first — the card shows the whole image without cropping, so empty
+margins just make the poster appear smaller.
+
 ## Before publishing — content checklist
 
 These placeholders are still in `index.html` and must be replaced:
@@ -40,7 +55,7 @@ These placeholders are still in `index.html` and must be replaced:
 - [ ] **Service times** — "Service time — update here" (Sunday) and "Time — update here" (Wednesday)
 - [ ] **M-Pesa giving** — the `MPESA DETAILS` text in the Giving section needs the official Paybill/Till
 - [ ] **Events** — update the three cards in the Upcoming Events section with current dates
-- [ ] **Sermon link** — the "Watch Sermon →" link points to `#`
+- [ ] **Sermon video** — add the YouTube ID to `data-video-id` (see above)
 - [ ] **Ministry cards** — all seven link to `#`; point them at real pages or remove the links
 - [ ] **Social links** — Facebook / YouTube / Instagram in the footer point to `#`
 - [ ] **Gallery** — six "ADD PHOTO" tiles; swap in real photos
