@@ -64,6 +64,27 @@ sermonMedia?.querySelector(".play-button")?.addEventListener("click", playSermon
 document.querySelector(".js-watch-sermon")?.addEventListener("click", playSermon);
 
 /* ---------------------------------------------------------------
+   Highlight the nav link for whichever section is on screen
+   --------------------------------------------------------------- */
+const navLinks = Array.from(document.querySelectorAll(".nav a[href^='#']"));
+const sections = navLinks
+  .map(a => document.querySelector(a.getAttribute("href")))
+  .filter(Boolean);
+
+if (sections.length && "IntersectionObserver" in window) {
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach(a => {
+        a.classList.toggle("active", a.getAttribute("href") === `#${entry.target.id}`);
+      });
+    });
+  }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+
+  sections.forEach(s => spy.observe(s));
+}
+
+/* ---------------------------------------------------------------
    Footer year
    --------------------------------------------------------------- */
 const yearEl = document.getElementById("year");

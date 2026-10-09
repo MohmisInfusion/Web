@@ -19,12 +19,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "name": "Emmanuel Word Chapel",
+    "slogan": "Teaching • Raising Disciples • Transforming Lives",
+    "description": "A Bible-believing Christian community in Kahawa Wendani committed to teaching the Word of God, raising disciples and transforming lives.",
+    "url": "https://mohmisinfusion.github.io/Web/",
+    "image": "https://mohmisinfusion.github.io/Web/assets/images/hero.jpg",
+    "telephone": "+254720200619",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kahawa Wendani",
+      "addressCountry": "KE"
+    }
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#home">Skip to main content</a>
   <header class="site-header" id="top">
     <a class="brand" href="#home" aria-label="Emmanuel Word Chapel home">
-      <div class="brand-mark">✝</div>
+      <div class="brand-mark" aria-hidden="true">✝</div>
       <div>
         <strong>EMMANUEL<br>WORD CHAPEL</strong>
         <small>KAHAWA WENDANI</small>
@@ -34,7 +52,7 @@
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
 
     <nav class="nav" aria-label="Main navigation">
-      <a class="active" href="#home">Home</a>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#sermons">Sermons</a>
@@ -64,22 +82,22 @@
 
     <section class="week-strip" id="services">
       <div class="week-intro">
-        <span class="icon">▣</span>
+        <span class="icon" aria-hidden="true">▣</span>
         <div>
           <h2>This Week at the Chapel</h2>
           <p>Join us for fellowship, worship and the Word.</p>
         </div>
       </div>
       <div class="schedule-card">
-        <span class="schedule-icon">◉</span>
+        <span class="schedule-icon" aria-hidden="true">◉</span>
         <div><strong>Sunday</strong><span>Main Worship Service</span><em>Service time — update here</em></div>
       </div>
       <div class="schedule-card">
-        <span class="schedule-icon">◒</span>
+        <span class="schedule-icon" aria-hidden="true">◒</span>
         <div><strong>Wednesday</strong><span>Prayer &amp; Bible Study</span><em>Time — update here</em></div>
       </div>
       <div class="schedule-card">
-        <span class="schedule-icon">✦</span>
+        <span class="schedule-icon" aria-hidden="true">✦</span>
         <div><strong>Other Gatherings</strong><span>Men • Women • Youth • Children</span><em>See events for details</em></div>
       </div>
     </section>
@@ -135,13 +153,13 @@
         <p>Serving God together, for a greater impact.</p>
       </div>
       <div class="ministry-grid">
-        <a class="ministry-card m1" href="#"><span>♟</span><strong>Men</strong></a>
-        <a class="ministry-card m2" href="#"><span>◯</span><strong>Women</strong></a>
-        <a class="ministry-card m3" href="#"><span>✦</span><strong>Youth</strong></a>
-        <a class="ministry-card m4" href="#"><span>♧</span><strong>Children</strong></a>
-        <a class="ministry-card m5" href="#"><span>🙏</span><strong>Prayer</strong></a>
-        <a class="ministry-card m6" href="#"><span>▣</span><strong>Media</strong></a>
-        <a class="ministry-card m7" href="#"><span>▤</span><strong>Discipleship</strong></a>
+        <a class="ministry-card m1" href="#"><span aria-hidden="true">♟</span><strong>Men</strong></a>
+        <a class="ministry-card m2" href="#"><span aria-hidden="true">◯</span><strong>Women</strong></a>
+        <a class="ministry-card m3" href="#"><span aria-hidden="true">✦</span><strong>Youth</strong></a>
+        <a class="ministry-card m4" href="#"><span aria-hidden="true">♧</span><strong>Children</strong></a>
+        <a class="ministry-card m5" href="#"><span aria-hidden="true">🙏</span><strong>Prayer</strong></a>
+        <a class="ministry-card m6" href="#"><span aria-hidden="true">▣</span><strong>Media</strong></a>
+        <a class="ministry-card m7" href="#"><span aria-hidden="true">▤</span><strong>Discipleship</strong></a>
       </div>
     </section>
 
@@ -153,8 +171,8 @@
         <a class="text-link" href="#contact">Learn More About Us →</a>
       </div>
       <div class="vision-card">
-        <div><span>◎</span><div><h3>Our Vision</h3><p>To be a Christ-centered Chapel that transforms lives and impacts our community.</p></div></div>
-        <div><span>✝</span><div><h3>Our Mission</h3><p>To teach the Word, build disciples, and reach the world with the Gospel.</p></div></div>
+        <div><span aria-hidden="true">◎</span><div><h3>Our Vision</h3><p>To be a Christ-centered Chapel that transforms lives and impacts our community.</p></div></div>
+        <div><span aria-hidden="true">✝</span><div><h3>Our Mission</h3><p>To teach the Word, build disciples, and reach the world with the Gospel.</p></div></div>
       </div>
       <div class="welcome-image placeholder-image"><span>CHAPEL / WORSHIP PHOTO</span><div>Come Worship<br>With Us</div></div>
     </section>
@@ -192,15 +210,23 @@
         <p class="eyebrow">YOU ARE WELCOME</p>
         <h2>Come Worship With Us</h2>
         <p>We would love to worship, learn and grow together with you.</p>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Kahawa%20Wendani%2C%20Nairobi%2C%20Kenya&amp;output=embed"
+            title="Map showing Kahawa Wendani, where Emmanuel Word Chapel meets"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
       <div class="contact-card">
         <h3>Emmanuel Word Chapel</h3>
-        <p>📍 Kahawa Wendani</p>
-        <p>📞 <a href="tel:+254720200619">0720 200 619</a></p>
+        <p><span aria-hidden="true">📍</span> Kahawa Wendani</p>
+        <p><span aria-hidden="true">📞</span> <a href="tel:+254720200619">0720 200 619</a></p>
         <div class="contact-actions">
           <a class="btn btn-gold" href="https://wa.me/254720200619" target="_blank" rel="noopener">WhatsApp Us</a>
           <a class="btn btn-outline-dark" href="tel:+254720200619">Call Us</a>
         </div>
+        <a class="text-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Kahawa+Wendani%2C+Nairobi%2C+Kenya"
+           target="_blank" rel="noopener">Get Directions →</a>
       </div>
     </section>
   </main>
@@ -208,11 +234,11 @@
   <footer>
     <div class="footer-main">
       <div class="footer-brand">
-        <div class="brand-mark">✝</div>
+        <div class="brand-mark" aria-hidden="true">✝</div>
         <div><strong>EMMANUEL<br>WORD CHAPEL</strong><small>KAHAWA WENDANI</small></div>
         <p>Teaching • Raising Disciples • Transforming Lives</p>
       </div>
-      <div><h3>Contact Us</h3><p>📍 Kahawa Wendani</p><p>📞 0720 200 619</p><p>💬 WhatsApp 0720 200 619</p></div>
+      <div><h3>Contact Us</h3><p><span aria-hidden="true">📍</span> Kahawa Wendani</p><p><span aria-hidden="true">📞</span> 0720 200 619</p><p><span aria-hidden="true">💬</span> WhatsApp 0720 200 619</p></div>
       <div><h3>Quick Links</h3><a href="#about">About Us</a><a href="#services">Services</a><a href="#sermons">Sermons</a><a href="#ministries">Ministries</a><a href="#events">Events</a></div>
       <div><h3>Follow Us</h3><p class="socials"><a href="#">Facebook</a> <a href="#">YouTube</a> <a href="#">Instagram</a></p><p>Stay connected for updates and encouragement.</p></div>
     </div>

@@ -10,12 +10,19 @@ Static one-page website for Emmanuel Word Chapel.
 .
 ├── index.html            # The whole site (single page, anchor navigation)
 ├── style.css             # All styling, CSS custom properties + responsive rules
-├── script.js             # Mobile menu toggle, footer year
+├── script.js             # Mobile menu, sermon video, scroll-spy nav, footer year
+├── 404.html              # Shown when a visitor hits a URL that doesn't exist
+├── robots.txt            # Tells search engines they may index the site
+├── sitemap.xml           # Lists the site's pages for search engines
 └── assets/
     └── images/           # hero.jpg, sermon.jpg, favicon.svg (see assets/images/README.md)
 ```
 
 No build step, no dependencies. Fonts are loaded from Google Fonts.
+
+> **If the site ever moves to a custom domain,** update the URL in three
+> places: `robots.txt`, `sitemap.xml`, and the `og:url` / `canonical` /
+> structured-data block in `index.html`.
 
 ## Running locally
 
