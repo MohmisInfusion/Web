@@ -13,6 +13,11 @@
 html{scroll-behavior:smooth}
 body{font-family:"DM Sans",Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
 a{text-decoration:none;color:inherit}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:2000;background:var(--gold);color:#101c2e;padding:11px 18px;font-weight:700;font-size:14px;border-radius:0 0 7px 0}
+.skip-link:focus{left:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.map-wrap{margin-top:24px;border-radius:10px;overflow:hidden;box-shadow:var(--shadow);line-height:0;max-width:560px}
+.map-wrap iframe{width:100%;height:260px;border:0;display:block}
 .site-header{height:82px;background:#fff;display:flex;align-items:center;padding:0 4%;gap:28px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 15px rgba(0,0,0,.07)}
 .brand{display:flex;align-items:center;gap:12px;min-width:330px}
 .brand-mark{font-size:42px;color:var(--navy);line-height:1}
@@ -52,7 +57,15 @@ a{text-decoration:none;color:inherit}
 .section-heading.light h2{color:#fff}
 .sermon-body{display:grid;grid-template-columns:45% 1fr;gap:22px;align-items:center}
 .placeholder-image{background:linear-gradient(135deg,#18385e,#617083);min-height:245px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;letter-spacing:2px;position:relative;border-radius:7px;overflow:hidden}
-.placeholder-image:has(.play-button){background-image:linear-gradient(135deg,rgba(5,26,54,.35),rgba(5,26,54,.75)),url("assets/images/sermon.jpg");background-size:cover;background-position:center}
+.sermon-media{position:relative;margin:0;border-radius:7px;overflow:hidden;background:#061c3a;display:flex;align-items:center;justify-content:center}
+.sermon-poster-link{display:block;width:100%}
+.sermon-media img{display:block;width:100%;height:auto;object-fit:contain}
+.sermon-media .play-button{position:absolute;right:12px;bottom:12px;left:auto;top:auto;width:52px;height:52px;box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:2}
+.sermon-media .play-button:hover{background:var(--gold)}
+.sermon-media.is-playing{aspect-ratio:16/9;background:#000}
+.sermon-media.is-playing .sermon-poster-link{display:none}
+.sermon-media iframe{width:100%;height:100%;border:0;display:block}
+.sermon-note{margin-top:12px;font-size:12px;color:#d9e0ea;background:rgba(255,255,255,.08);border-left:3px solid var(--gold);padding:9px 12px;border-radius:0 5px 5px 0}
 .play-button{position:absolute;border:0;width:58px;height:58px;border-radius:50%;background:#fff;color:var(--navy);font-size:20px;cursor:pointer}
 .pill{display:inline-block;background:var(--gold);color:#111d2f;font-weight:800;font-size:10px;padding:4px 8px;border-radius:4px}.sermon-copy h3{font-family:"Playfair Display",serif;font-size:25px;line-height:1.15;margin:12px 0}.sermon-copy p{font-size:12px;color:#d9e0ea;margin-bottom:16px}.sermon-copy small{display:block;color:#b9c7d8;margin-bottom:15px}.text-link{display:inline-block;color:#bc8800;font-weight:800;font-size:13px;margin-top:8px}.sermon-feature .text-link{color:var(--gold)}
 .events-preview{background:#f5f8fc;border-radius:10px;padding:28px}.event{display:flex;gap:15px;background:#fff;border:1px solid #e4eaf2;padding:13px;margin:10px 0;border-radius:7px}.date-box{min-width:58px;height:58px;background:var(--navy);color:#fff;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center}.date-box strong{font-size:20px;line-height:1}.date-box span{font-size:9px;letter-spacing:1px}.event h3{font-size:14px}.event p,.event small{display:block;font-size:11px;color:var(--muted)}
