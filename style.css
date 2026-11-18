@@ -89,128 +89,54 @@ footer{background:#061c3a;color:#fff;padding:50px max(4%,calc((100% - 1200px)/2)
    CHURCH PHOTO GALLERY
 ================================ */
 
-.gallery-section {padding: 60px 20px;background: #f8f9fc;}.gallery-section .section-header {text-align: center;margin-bottom: 35px;}.gallery-grid {display: grid;grid-template-columns: 1fr;gap: 25px;max-width: 1200px;margin: 0 auto;}
+/* FIX: Gallery images and captions must stack vertically */
 
-/* Gallery cards */
-.gallery-item {background: #ffffff;border-radius: 12px;overflow: hidden;border: 1px solid #e8eaf0;box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease}.gallery-item:hover {transform: translateY(-5px);box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10)}
+.gallery-section {
+  width: 100%;
+  box-sizing: border-box;
+}
 
-/* Photographs */
+.gallery-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  width: 100%;
+  gap: 24px;
+}
+
+.gallery-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
 .gallery-item img {
   display: block;
-  width: 100%;
-  height: 240px;
+  width: 100% !important;
+  max-width: 100%;
+  height: 230px;
   object-fit: cover;
-  object-position: center;
 }
 
-/* Captions below photographs */
 .gallery-caption {
-  padding: 20px;
+  display: block !important;
+  width: 100% !important;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 18px 20px;
 }
 
-.gallery-caption h3 {
-  color: #142b4a;
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin: 0 0 10px;
-}
-
+.gallery-caption h3,
 .gallery-caption p {
-  color: #555e6b;
-  font-size: 0.94rem;
-  line-height: 1.7;
-  margin: 0;
+  width: 100%;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
-.gallery-date {
-  display: inline-block;
-  color: #b58a32;
-  font-size: 0.82rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-  letter-spacing: 0.3px;
-}
-
-/* Upcoming photo placeholders */
 .gallery-placeholder {
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 25px;
-  background: #f0f2f6;
-  border: 2px dashed #c8ced9;
-  box-shadow: none;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
-
-.gallery-placeholder:hover {
-  transform: none;
-  box-shadow: none;
-  border-color: #b58a32;
-}
-
-.placeholder-content {
-  max-width: 250px;
-}
-
-.placeholder-content .placeholder-icon {
-  display: block;
-  color: #b58a32;
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.placeholder-content h3 {
-  color: #142b4a;
-  font-size: 1.05rem;
-  margin: 0 0 10px;
-}
-
-.placeholder-content p {
-  color: #77808d;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* Tablets */
-@media (min-width: 700px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-  }
-
-  .gallery-item img {
-    height: 250px;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1050px) {
-  .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-
-  .gallery-item img {
-    height: 230px;
-  }
-}
-
-/* Small mobile screens */
-@media (max-width: 380px) {
-  .gallery-section {
-    padding: 45px 14px;
-  }
-
-  .gallery-caption {
-    padding: 16px;
-  }
-
-  .gallery-item img {
-    height: 210px;
-  }
-}
-
