@@ -84,3 +84,133 @@ footer{background:#061c3a;color:#fff;padding:50px max(4%,calc((100% - 1200px)/2)
 /* Make M-Pesa account number clearly visible */.give-box p strong {color: #17243a;}.give-box .mpesa-account {color: #087443; !important;font-weight: 800;font-size: 18px;}
 /* Improve Sunday Services spacing and readability */.sunday-schedule {display: flex;flex-direction: column;gap: 12px;}.sunday-schedule > strong {display: block;margin-bottom: 4px;}.sunday-schedule p { margin: 0;line-height: 1.7;font-size: 14px;}.sunday-schedule p b {display: inline-block;margin-bottom: 2px;color: #17243a;}
 /* Improve Sunday Services font size */.sunday-schedule strong {font-size: 16px;font-weight: 800;}.sunday-schedule p {font-size: 14px;line-height: 1.6;}.sunday-schedule p b {font-size: 15px;font-weight: 700;}
+
+/* ================================
+   CHURCH PHOTO GALLERY
+================================ */
+
+.gallery-section {padding: 60px 20px;background: #f8f9fc;}.gallery-section .section-header {text-align: center;margin-bottom: 35px;}.gallery-grid {display: grid;grid-template-columns: 1fr;gap: 25px;max-width: 1200px;margin: 0 auto;}
+
+/* Gallery cards */
+.gallery-item {background: #ffffff;border-radius: 12px;overflow: hidden;border: 1px solid #e8eaf0;box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease}.gallery-item:hover {transform: translateY(-5px);box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10)}
+
+/* Photographs */
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Captions below photographs */
+.gallery-caption {
+  padding: 20px;
+}
+
+.gallery-caption h3 {
+  color: #142b4a;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.gallery-caption p {
+  color: #555e6b;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.gallery-date {
+  display: inline-block;
+  color: #b58a32;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+
+/* Upcoming photo placeholders */
+.gallery-placeholder {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  background: #f0f2f6;
+  border: 2px dashed #c8ced9;
+  box-shadow: none;
+}
+
+.gallery-placeholder:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: #b58a32;
+}
+
+.placeholder-content {
+  max-width: 250px;
+}
+
+.placeholder-content .placeholder-icon {
+  display: block;
+  color: #b58a32;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.placeholder-content h3 {
+  color: #142b4a;
+  font-size: 1.05rem;
+  margin: 0 0 10px;
+}
+
+.placeholder-content p {
+  color: #77808d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tablets */
+@media (min-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .gallery-item img {
+    height: 250px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1050px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .gallery-item img {
+    height: 230px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 380px) {
+  .gallery-section {
+    padding: 45px 14px;
+  }
+
+  .gallery-caption {
+    padding: 16px;
+  }
+
+  .gallery-item img {
+    height: 210px;
+  }
+}
+
