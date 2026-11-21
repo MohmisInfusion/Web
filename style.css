@@ -84,18 +84,4 @@ footer{background:#061c3a;color:#fff;padding:50px max(4%,calc((100% - 1200px)/2)
 /* Improve Sunday Services spacing and readability */.sunday-schedule {display: flex;flex-direction: column;gap: 12px;}.sunday-schedule > strong {display: block;margin-bottom: 4px;}.sunday-schedule p { margin: 0;line-height: 1.7;font-size: 14px;}.sunday-schedule p b {display: inline-block;margin-bottom: 2px;color: #17243a;}
 /* Improve Sunday Services font size */.sunday-schedule strong {font-size: 16px;font-weight: 800;}.sunday-schedule p {font-size: 14px;line-height: 1.6;}.sunday-schedule p b {font-size: 15px;font-weight: 700;}
 
-/* CHURCH PHOTO GALLERY */
-.gallery-section { width: 100%; box-sizing: border-box; }
-.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 24px; }
-.gallery-item { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; width: 100%; height: auto; min-width: 0; overflow: hidden; box-sizing: border-box; border-radius: 8px; background: #fff; }
-.gallery-item img { display: block; width: 100%; max-width: 100%; height: auto; object-fit: contain; }
-.gallery-caption { display: block; width: 100%; min-width: 0; box-sizing: border-box; padding: 18px 20px; background: #f5f8fc; }
-.gallery-caption h3 { font-size: 17px; color: var(--navy); margin-bottom: 8px; }
-.gallery-caption p { font-size: 13px; color: var(--muted); line-height: 1.7; overflow-wrap: break-word; white-space: normal; }
-.gallery-placeholder { width: 100%; min-width: 0; min-height: 180px; box-sizing: border-box; border: 2px dashed #cbd5e1; border-radius: 8px; background: #f5f8fc; }
-
-/* TABLET */
-@media (max-width: 780px) { .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-
-/* MOBILE */
-@media (max-width: 450px) { .gallery-grid { grid-template-columns: 1fr; } }
+.gallery-section{width:min(1200px,92%);max-width:1200px;margin:75px auto;padding:0;box-sizing:border-box}.gallery-section .section-heading{width:100%;margin-bottom:25px}.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:24px;align-items:start}.gallery-item{display:flex;flex-direction:column;width:100%;min-width:0;margin:0;padding:0;overflow:hidden;box-sizing:border-box;border-radius:8px;background:#fff}.gallery-item img{display:block;width:100%;height:220px;object-fit:cover;object-position:center;flex-shrink:0}.gallery-caption{display:block;width:100%;min-width:0;padding:16px 15px 20px;box-sizing:border-box;background:#f5f8fc}.gallery-date{display:block;margin-bottom:8px;color:#b18b24;font-size:11px;font-weight:700;letter-spacing:1.5px;line-height:1.6}.gallery-caption h3{margin:0 0 8px;color:var(--navy);font-size:17px;line-height:1.4}.gallery-caption p{margin:0;color:var(--muted);font-size:13px;line-height:1.7;white-space:normal;overflow-wrap:break-word}.gallery-placeholder{display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:220px;padding:20px;box-sizing:border-box;border:2px dashed #cbd5e1;border-radius:8px;background:#f5f8fc}@media(max-width:780px){.gallery-section{width:92%}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.gallery-item img{height:210px}}@media(max-width:450px){.gallery-section{width:92%;margin:55px auto}.gallery-grid{grid-template-columns:minmax(0,1fr);gap:22px}.gallery-item img{height:230px}.gallery-caption{padding:16px}}
